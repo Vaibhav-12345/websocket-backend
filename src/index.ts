@@ -108,7 +108,8 @@ import exress  from 'express'
 import cors from 'cors'
 const app=exress()
 app.use(cors({
-  origin:['http://localhost:5173'],
+  origin:['http://localhost:5173',"websocket-fronted.vercel.app"
+],
   credentials:true
 }))
 
